@@ -1,0 +1,16 @@
+{
+  "name": "luxoft-limited",
+  "version": "1.0.0",
+  "description": "company profile",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server docroot -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kagwiandrew@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
