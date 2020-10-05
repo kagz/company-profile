@@ -8,7 +8,7 @@
 }
 
 section#home {
-     background-image: url("https://www.luxoft.com/upload/medialibrary/4d7/luxoft_home.jpg");
+background-image: url("https://www.luxoft.com/upload/medialibrary/4d7/luxoft_home.jpg");
 background-color: darkcyan;
 }
 
@@ -23,4 +23,9 @@ background-color: darkcyan;
 .half-width{
     width: 50%;
     border: 5px solid cyan;
+}
+
+section#services{
+   height: 450px;
+   border: 3px solid goldenrod; 
 }

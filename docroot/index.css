@@ -9524,7 +9524,6 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     text-decoration: none;
-    text-transform: uppercase;
     color: #fff; }
 
 #main-header-search-container {
@@ -9565,3 +9564,7 @@ section#home {
 .half-width {
   width: 50%;
   border: 5px solid cyan; }
+
+section#services {
+  height: 450px;
+  border: 3px solid goldenrod; }
