@@ -9543,3 +9543,25 @@ body {
   #main-header-search-container input,
   #main-header-search-container .input-group {
     height: 100%; }
+
+.main-body {
+  height: 100vh;
+  border: 3px solid red;
+  display: flex;
+  color: whitesmoke;
+  background-color: rgba(48, 47, 47, 0.973); }
+
+section#home {
+  background-image: url("https://www.luxoft.com/upload/medialibrary/4d7/luxoft_home.jpg");
+  background-color: darkcyan; }
+
+.upper-banner {
+  display: flex;
+  max-height: 450px;
+  vertical-align: middle;
+  width: 100%;
+  border: 3px solid chartreuse; }
+
+.half-width {
+  width: 50%;
+  border: 5px solid cyan; }
