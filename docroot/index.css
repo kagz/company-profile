@@ -9545,7 +9545,6 @@ body {
 
 .main-body {
   height: 100vh;
-  border: 3px solid red;
   display: flex;
   color: whitesmoke;
   background-color: rgba(48, 47, 47, 0.973);
@@ -9619,6 +9618,53 @@ section#home {
   border-left: none;
   position: relative;
   transition: 0.8s ease 0.8s; }
+
+section#services {
+  margin-top: 0; }
+
+.our-services {
+  background: #eee;
+  padding: 80px 0 60px 0;
+  margin: 80px 0 60px 0;
+  color: black; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  color: #003979; }
+
+.our-services-top h2 {
+  transition: 0.5s ease;
+  position: relative;
+  top: 0;
+  opacity: 1; }
+
+.our-services-top p {
+  top: 0;
+  opacity: 1;
+  line-height: 24px;
+  transition: 0.5s ease 0.1s;
+  position: relative;
+  margin-bottom: 1.4rem; }
+
+.services-description {
+  padding-top: 48px;
+  max-width: 1454px;
+  min-height: 325px;
+  margin: 0 auto 35px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-left: -30; }
+
+.service-grid-area .area {
+  color: #444; }
+
+.area-inner {
+  display: flex;
+  vertical-align: middle; }
 
 section#digital-capability {
   background-image: url("https://www.luxoft.com/local/templates/lux40/img/bg/services-bg.jpg");
