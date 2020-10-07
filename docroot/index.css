@@ -9850,12 +9850,15 @@ section#digital-capability a {
 .social-icon a {
   background: #43331c;
   color: white;
+  align-items: center;
   padding: 4px 8px;
+  text-align: center;
   height: 28px;
   width: 28px;
-  display: block;
+  /* display: block; */
   border-radius: 50%;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex; }
 
 .social-icon li {
   list-style: none;
