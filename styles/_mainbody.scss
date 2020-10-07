@@ -122,7 +122,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
     text-transform: uppercase;
     padding: 9px 23px;
-    min-width: 178px;
+    // min-width: 178px;
     box-shadow: none !important;
     position: relative;
     border-radius: 3px;
@@ -217,11 +217,11 @@ padding-top: 60px;
     transition: 0.5s ease 0.2s;
 }
 
-// services-grid-area .col-xl-4 .area-inner p{
-//     top: 0;
-//     opacity: 1;
-//     color: white;
-// }
+services-grid-area .col-xl-4 .area-inner p{
+    top: 0;
+    opacity: 1;
+    color: white;
+}
 
 .services-grid-area .area-inner h4 strong{
     font-weight: 600;
