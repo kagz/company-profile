@@ -1,5 +1,12 @@
+
+
 .main-header {
-	position: relative;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 4rem;
+	left: 0;
+	z-index: 2;
 	font-family: 'Open Sans', helvetica, sans-serif;
 
 	i {
@@ -15,9 +22,10 @@
 		font-size: .95rem;
 	}
 
-	.navbar-nav {
+	.navbar-collapse {
 		@include media-breakpoint-down(md) {
 			position: absolute;
+			z-index: 10;
 			top: 72px;
 			left: 0;
 			right: 0;
@@ -58,7 +66,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	bottom: 16px;
+	bottom: 0;
 	left: 0;
 	transform: translateX(100%);
 	transition: transform .25s ease-in-out;
@@ -74,5 +82,10 @@
 	input,
 	.input-group {
 		height: 100%;
+	}
+
+	@include media-breakpoint-up(lg) {
+		left: auto;
+		width: 600px;
 	}
 }

@@ -9490,8 +9490,25 @@ body {
   color: #f0e2e2;
   background: #292828; }
 
+#close-overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(5, 5, 5, 0.35);
+  cursor: pointer; }
+  #close-overlay:not(.active) {
+    display: none; }
+
 .main-header {
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 4rem;
+  left: 0;
+  z-index: 2;
   font-family: 'Open Sans', helvetica, sans-serif; }
   .main-header i {
     color: #fff; }
@@ -9501,26 +9518,27 @@ body {
     justify-content: flex-end;
     font-size: .95rem; }
   @media (max-width: 991.98px) {
-    .main-header .navbar-nav {
+    .main-header .navbar-collapse {
       position: absolute;
+      z-index: 10;
       top: 72px;
       left: 0;
       right: 0;
       background-color: #fff; } }
   @media (max-width: 991.98px) {
-    .main-header .navbar-nav li {
+    .main-header .navbar-collapse li {
       padding: 1.8rem .8rem;
       text-align: center; }
-      .main-header .navbar-nav li:not(:last-of-type) {
+      .main-header .navbar-collapse li:not(:last-of-type) {
         border-bottom: 1px solid #e5e5e5; }
-      .main-header .navbar-nav li a {
+      .main-header .navbar-collapse li a {
         color: grey; } }
   @media (min-width: 992px) {
-    .main-header .navbar-nav li {
+    .main-header .navbar-collapse li {
       padding: 0 1rem; }
-      .main-header .navbar-nav li:not(:first-of-type) {
+      .main-header .navbar-collapse li:not(:first-of-type) {
         border-left: 1px solid #fff; } }
-  .main-header .navbar-nav a {
+  .main-header .navbar-collapse a {
     padding-top: 0;
     padding-bottom: 0;
     text-decoration: none;
@@ -9530,7 +9548,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 16px;
+  bottom: 0;
   left: 0;
   transform: translateX(100%);
   transition: transform .25s ease-in-out; }
@@ -9542,6 +9560,10 @@ body {
   #main-header-search-container input,
   #main-header-search-container .input-group {
     height: 100%; }
+  @media (min-width: 992px) {
+    #main-header-search-container {
+      left: auto;
+      width: 600px; } }
 
 .main-body {
   height: 100vh;
@@ -9601,6 +9623,12 @@ section#home {
   font-weight: 600;
   transition: 1.4s ease 1s;
   cursor: pointer; }
+
+@keyframes pulse {
+  0% {
+    top: 0; }
+  100% {
+    top: 8px; } }
 
 .scroller-text {
   max-width: 330px; }

@@ -72,7 +72,17 @@ background-image: url("https://www.luxoft.com/upload/medialibrary/4d7/luxoft_hom
     letter-spacing: 0.3px;
     font-weight: 600;
     transition: 1.4s ease 1s;
-    cursor: pointer;  
+    cursor: pointer;
+}
+
+@keyframes pulse {
+	0% {
+			top: 0
+	}
+
+	100% {
+			top: 8px
+	}
 }
 
 .scroller-text{
@@ -97,7 +107,7 @@ background-image: url("https://www.luxoft.com/upload/medialibrary/4d7/luxoft_hom
 
 section#services{
 //    height: 450px;
-//    border: 3px solid goldenrod; 
+//    border: 3px solid goldenrod;
 margin-top: 0;
 }
 
@@ -145,7 +155,7 @@ section#services .btn::after{
     transform: matrix(1,0,0,1,0,0);
     transition: 0.3s ease;
     }
-    
+
 .btn-white::after{
 content: "";
 width: 100%;
@@ -258,7 +268,7 @@ section#digital-capability{
   background-size: cover;
   background-position: center;
   margin-top: 0;
-  color: white;  
+  color: white;
 }
 
 .container{
@@ -280,7 +290,7 @@ section#digital-capability a{
 }
 .top-digital-capability-description h2{
     color: white;
-    
+
 }
 .top-digital-capability-description .button{
     padding-top: 20px;

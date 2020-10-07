@@ -1,8 +1,21 @@
-
 html,
 body {
   overflow-x: hidden;
   font-size: 18px;
   color: #f0e2e2;
   background: #292828;
+}
+
+#close-overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(5, 5, 5, .35);
+  cursor: pointer;
+  &:not(.active) {
+    display: none;
+  }
 }
