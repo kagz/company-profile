@@ -108,13 +108,56 @@ margin-top: 0;
     margin: 80px 0 60px 0;
     color: black;
 }
+.services-top{
+    text-align: center;
 
+}
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Open Sans',sans-serif;
+    // font-family: 'Open Sans',sans-serif;
     font-weight: 600;
     color: #003979;
 }
 
+.btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 9px 23px;
+    min-width: 178px;
+    box-shadow: none !important;
+    position: relative;
+    border-radius: 3px;
+    border: none;
+}
+section#services .btn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 1px solid #777676;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    pointer-events: none;
+    border-radius: 3px;
+    transform: matrix(1,0,0,1,0,0);
+    transition: 0.3s ease;
+    }
+    
+.btn-white::after{
+content: "";
+width: 100%;
+color: white;
+height: 100%;
+border: 1px solid #ffffff;
+position: absolute;
+left: 0;
+top: 0;
+display: block;
+pointer-events: none;
+border-radius: 3px;
+transform: matrix(1,0,0,1,0,0);
+transition: 0.3s ease;
+}
 .our-services-top h2{
     transition: 0.5s ease;
     position: relative;
@@ -145,16 +188,100 @@ h1,h2,h3,h4,h5,h6{
     margin-left: -30;
 }
 
-.service-grid-area .area{
-    color: #444;
+.services-grid-area{
+    text-align: center;
+}
+.services-grid-area .area{
+display: flex;
+ color: #444;
+width: 100%;
+border-top: 1px solid #cccdd7;
+margin-top: 60px;
+padding-top: 60px;
 }
 .area-inner{
     display: flex;
-    vertical-align: middle;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
+
+.services-grid-area .area-inner h4{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 200;
+    position: relative;
+    opacity: 1;
+    top: 0;
+    transition: 0.5s ease 0.2s;
+}
+
+// services-grid-area .col-xl-4 .area-inner p{
+//     top: 0;
+//     opacity: 1;
+//     color: white;
+// }
+
+.services-grid-area .area-inner h4 strong{
+    font-weight: 600;
+    display: block;
+}
+
+
+.services-grid-area .area-inner .button{
+   opacity: 1;
+   visibility: visible;
+   margin-top: 35px;
+}
+
+.services-grid-area .area-inner .button .btn{
+    color: #003979;
+    background: transparent;
+
+ }
 section#digital-capability{
     background-image: url("https://www.luxoft.com/local/templates/lux40/img/bg/services-bg.jpg");
-    border: 3px royalblue solid;
+    // border: 3px royalblue solid;
+}
+
+.digital-capability{
+    background: #eee;
+    padding: 80px 0 60px 0;
+    margin: 80px 0 0;
+}
+.digital-capability-bg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  color: white;  
+}
+
+.container{
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section#digital-capability a{
+    color: white;
+    text-decoration: none;
+
+}
+.top-digital-capability-description{
+    color: white;
+    text-align: center;
+    font: inherit;
+}
+.top-digital-capability-description h2{
+    color: white;
+    
+}
+.top-digital-capability-description .button{
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 footer#main-footer{
