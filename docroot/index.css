@@ -9614,6 +9614,8 @@ section#home {
   transition: 0.6s ease 0.4s; }
 
 .scroller {
+  color: #ffc477;
+  text-decoration: none;
   position: absolute;
   bottom: 55px;
   left: 50%;
